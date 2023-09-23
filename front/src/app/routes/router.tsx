@@ -4,9 +4,8 @@ import {
   PaginaInicial,
   PaginaAdicaoArquivo,
   PaginaNaoEncontrada,
-  PaginaCadastro
+  PaginaCadastro,
 } from '../../pages';
-import { MainLayout } from '../../components';
 
 const Router: React.FC = () => {
   return (
@@ -15,13 +14,11 @@ const Router: React.FC = () => {
         <Route path="login" element={<PaginaLogin />} />
         <Route path="cadastro" element={<PaginaCadastro />} />
         <Route path="pagina-nao-encontrada" element={<PaginaNaoEncontrada />} />
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<PaginaInicial />} />
-          <Route
-            path="pagina-adicionar-arquivo"
-            element={<PaginaAdicaoArquivo />}
-          />
-        </Route>
+        <Route path="/" element={<PaginaInicial />} />
+        <Route
+          path="pagina-adicionar-arquivo"
+          element={<PaginaAdicaoArquivo />}
+        />
         <Route
           path="*"
           element={<Navigate to={'/pagina-nao-encontrada'} replace />}

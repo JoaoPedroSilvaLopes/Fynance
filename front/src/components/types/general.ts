@@ -2,6 +2,7 @@ import {
   AnchorHTMLAttributes,
   ComponentType,
   DetailedHTMLProps,
+  HTMLAttributes,
   ReactNode,
 } from 'react';
 import { ButtonProps as BsButtonProps } from 'react-bootstrap';
@@ -21,4 +22,17 @@ export type LinkButtonProps = Omit<
   disabled?: boolean;
   children?: ReactNode;
   variant?: 'primary' | 'secondary';
+};
+
+export type SectionProps = HTMLAttributes<HTMLDivElement> & {
+  title: string;
+  isRequired?: boolean;
+  actions?: ReactNode[];
+};
+
+export type PanelProps = HTMLAttributes<HTMLDivElement> & {
+  title?: string;
+  isRequired?: boolean;
+  actions?: ReactNode[];
+  children: ReactNode;
 };
