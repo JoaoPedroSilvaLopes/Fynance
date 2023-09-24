@@ -29,11 +29,12 @@ public class UsuariosController : BaseController
 
     [HttpGet("{id}")]
     [SwaggerOperation(Summary = "Obter um Usuário", Tags = new[] { "GLBViewer - Usuário" })]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(UsuarioDto), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> ObterPorId(int id)
     {
-        return OkResponse(await _usuarioService.ObterPorId(id));
+        var teste = await _usuarioService.ObterPorId(id);
+        return OkResponse(teste);
     }
 
     [HttpPut("{id}")]

@@ -11,6 +11,7 @@ namespace GLBViewerAPI.Models
         public string Nome { get; set; } = null!;
         public string Email { get; set; } = null!;
         public string Senha { get; set; } = null!;
+        public List<FileGLB> FilesGLB { get; set; } = new();
 
         public override bool Validar(out ValidationResult validationResult)
         {

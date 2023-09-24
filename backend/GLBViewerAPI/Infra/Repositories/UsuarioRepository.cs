@@ -28,7 +28,7 @@ namespace GLBViewerAPI.Infra.Repositories
 
         public async Task<Usuario> ObterPorId(int id)
         {
-            return await Context.Usuarios.FirstOrDefaultAsync(u => u.Id == id);
+            return await Context.Usuarios.Include(u => u.FilesGLB).FirstOrDefaultAsync(u => u.Id == id);
         }
         
         public async Task<Usuario> ObterPorEmail(string email)

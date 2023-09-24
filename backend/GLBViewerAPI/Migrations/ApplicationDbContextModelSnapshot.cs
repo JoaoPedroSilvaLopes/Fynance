@@ -18,6 +18,30 @@ namespace GLBViewerAPI.Migrations
                 .HasAnnotation("ProductVersion", "7.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("GLBViewerAPI.Domain.Models.FileGLB", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("Url")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("FilesGlb");
+                });
+
             modelBuilder.Entity("GLBViewerAPI.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -39,6 +63,22 @@ namespace GLBViewerAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("GLBViewerAPI.Domain.Models.FileGLB", b =>
+                {
+                    b.HasOne("GLBViewerAPI.Models.Usuario", "Usuario")
+                        .WithMany("FilesGLB")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("GLBViewerAPI.Models.Usuario", b =>
+                {
+                    b.Navigation("FilesGLB");
                 });
 #pragma warning restore 612, 618
         }

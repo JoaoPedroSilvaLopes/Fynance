@@ -56,7 +56,7 @@ public class AuthService : BaseService, IAuthService
         var tokenHandle = new JwtSecurityTokenHandler();
 
         var claimsIdentity = new ClaimsIdentity();
-        claimsIdentity.AddClaim(new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()));
+        claimsIdentity.AddClaim(new Claim("Id", usuario.Id.ToString()));
         claimsIdentity.AddClaim(new Claim(ClaimTypes.Email, usuario.Email));
 
         var key = await _jwtService.GetCurrentSigningCredentials();

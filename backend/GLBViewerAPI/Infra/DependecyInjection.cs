@@ -26,7 +26,9 @@ namespace GLBViewerAPI.Infra
 
         public static void AddRepositories(this IServiceCollection services)
         {
-            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services
+                .AddScoped<IUsuarioRepository, UsuarioRepository>()
+                .AddScoped<IFileGLBRespository, FilesGLBRepository>();
         }
     }
 }
