@@ -4,7 +4,7 @@ import {
   DetailedHTMLProps,
   ReactNode,
 } from 'react';
-import { ButtonProps as BsButtonProps } from 'react-bootstrap';
+import { AlertProps, ButtonProps as BsButtonProps } from 'react-bootstrap';
 
 export type ButtonProps = BsButtonProps & {
   isLoading?: boolean;
@@ -22,3 +22,12 @@ export type LinkButtonProps = Omit<
   children?: ReactNode;
   variant?: 'primary' | 'secondary';
 };
+
+export type MessageProps = AlertProps & {
+  title?: string
+  children: ReactNode
+}
+
+export type MessageListProps = Omit<MessageProps, 'children'> & {
+  items: string[]
+}

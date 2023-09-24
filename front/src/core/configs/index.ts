@@ -1,1 +1,2 @@
-export * from './breakpoints'
+export * from './breakpoints';
+export * from './api';
