@@ -2,7 +2,7 @@ import { ChangeEvent } from 'react';
 import { Col, Form } from 'react-bootstrap';
 import { FaUserCircle } from 'react-icons/fa';
 import { Controller, SubmitHandler, useFormContext } from 'react-hook-form';
-
+import { Link } from 'react-router-dom';
 import {
   TextInput,
   Button,
@@ -12,7 +12,6 @@ import {
 import { LoginUsuarioFormInput } from '../../../../domain-types';
 
 import * as S from './login-form.styles';
-import { Link } from 'react-router-dom';
 
 type Props = {
   isCheck: boolean;

@@ -1,5 +1,6 @@
 import { Col, Form } from 'react-bootstrap';
 import { FaUserCircle } from 'react-icons/fa';
+import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { Controller, SubmitHandler, useFormContext } from 'react-hook-form';
 import {
   TextInput,
@@ -28,7 +29,7 @@ const CadastroForm: React.FC<Props> = ({ onSubmit }) => {
           control={control}
           render={({ field }) => (
             <TextInput
-              placeholder="Nome"
+              placeholder="Insira seu Nome"
               leftIcon={FaUserCircle}
               error={formState.errors.nome?.message}
               required={true}
@@ -43,8 +44,8 @@ const CadastroForm: React.FC<Props> = ({ onSubmit }) => {
           control={control}
           render={({ field }) => (
             <TextInput
-              placeholder="Nome"
-              leftIcon={FaUserCircle}
+              placeholder="Insira seu Email"
+              leftIcon={MdOutlineAlternateEmail}
               error={formState.errors.email?.message}
               required={true}
               {...field}
@@ -58,7 +59,7 @@ const CadastroForm: React.FC<Props> = ({ onSubmit }) => {
           control={control}
           render={({ field }) => (
             <PasswordInput
-              placeholder="Senha"
+              placeholder="Insira sua Senha"
               error={formState.errors.senha?.message}
               required={true}
               {...field}
@@ -72,7 +73,7 @@ const CadastroForm: React.FC<Props> = ({ onSubmit }) => {
           control={control}
           render={({ field }) => (
             <PasswordInput
-              placeholder="Confirmar Senha"
+              placeholder="Confirme sua Senha"
               error={formState.errors.confirmarSenha?.message}
               required={true}
               {...field}
