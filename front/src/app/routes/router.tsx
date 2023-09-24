@@ -2,10 +2,10 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import {
   PaginaLogin,
   PaginaInicial,
-  PaginaAdicaoArquivo,
-  PaginaNaoEncontrada,
   PaginaCadastro,
+  PaginaNaoEncontrada,
 } from '../../pages';
+import ProtectedRoute from './protected-route';
 
 const Router: React.FC = () => {
   return (
@@ -14,14 +14,13 @@ const Router: React.FC = () => {
         <Route path="login" element={<PaginaLogin />} />
         <Route path="cadastro" element={<PaginaCadastro />} />
         <Route path="pagina-nao-encontrada" element={<PaginaNaoEncontrada />} />
-        <Route path="/" element={<PaginaInicial />} />
-        <Route
-          path="pagina-adicionar-arquivo"
-          element={<PaginaAdicaoArquivo />}
-        />
         <Route
           path="*"
           element={<Navigate to={'/pagina-nao-encontrada'} replace />}
+        />
+        <Route
+          path="/"
+          element={<ProtectedRoute component={PaginaInicial} />}
         />
       </Routes>
     </BrowserRouter>
