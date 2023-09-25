@@ -1,10 +1,9 @@
 export type ContaUsuario = {
-  sub: string;
+  id: number;
   email: string;
-  jti: string;
   nbf: number;
-  iat: number;
   exp: number;
+  iat: number;
   iss: string;
   aud: string;
 };

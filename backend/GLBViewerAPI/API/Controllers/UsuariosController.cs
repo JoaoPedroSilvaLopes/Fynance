@@ -33,8 +33,7 @@ public class UsuariosController : BaseController
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> ObterPorId(int id)
     {
-        var teste = await _usuarioService.ObterPorId(id);
-        return OkResponse(teste);
+        return OkResponse(await _usuarioService.ObterPorId(id));
     }
 
     [HttpPut("{id}")]

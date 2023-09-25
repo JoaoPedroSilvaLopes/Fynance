@@ -95,6 +95,11 @@ public class FileGlbService : BaseService, IFileGLBService
         }
     }
 
+    public async Task<List<FileGLBDto>> ObterTodos()
+    {
+        return Mapper.Map<List<FileGLBDto>>(await _fileGlbRespository.ObterTodos(ObterIdUsuario()));
+    }
+
     private int ObterIdUsuario()
     {
         var Id = _contextAccessor?

@@ -34,8 +34,17 @@ public class FileGLBController : BaseController
     {
         return OkResponse(await _fileGlbService.ObterPorId(id));
     }
+    
+    [HttpGet("/modelos-usuarios")]
+    [SwaggerOperation(Summary = "Obter Modelos GLB de um usuário", Tags = new[] { "GLBViewer - Modelo GLB" })]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> ObterTodos()
+    {
+        return OkResponse(await _fileGlbService.ObterTodos());
+    }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     [SwaggerOperation(Summary = "Remover um Modelo GLB", Tags = new[] { "GLBViewer - Modelo GLB" })]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status403Forbidden)]

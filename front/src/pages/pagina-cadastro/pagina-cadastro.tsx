@@ -12,11 +12,15 @@ const PaginaCadastro: React.FC = () => {
     <S.Container>
       <S.Content>GLB Viewer</S.Content>
       <S.AuthContainer>
-        {errors.length > 0 && (
-          <MessageList variant="danger" items={errors} onClose={clearErrors} />
-        )}
-        <S.Title>CADASTRO</S.Title>
         <S.Children>
+          <S.Title>CADASTRO</S.Title>
+          {errors.length > 0 && (
+            <MessageList
+              variant="danger"
+              items={errors}
+              onClose={clearErrors}
+            />
+          )}
           <FormProvider {...form}>
             <CadastroForm onSubmit={onSubmit} />
           </FormProvider>

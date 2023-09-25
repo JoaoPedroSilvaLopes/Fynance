@@ -9,48 +9,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752da47-6fd7-4940-940e-d3698047fcfc" name="Changes" comment=":recycle: refactor: Refatoração e organização da API">
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/API/Controllers/FileGLBController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Contracts/IFileGLBService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Contracts/IFileService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/DTOs/FileGLB/AdicionarFileGLBDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/DTOs/FileGLB/FileGLBDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Core/Enums/EPathAccess.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Core/Enums/EUploadPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Core/Extensions/EnumExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Domain/Contracts/Repositories/IFileGLBRespository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Domain/Validators/FileGLBValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Infra/Mappings/FilesGLBMapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Infra/Repositories/FilesGLBRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Migrations/20230924205244_AddFilesGLB.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/Migrations/20230924205244_AddFilesGLB.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GLBViewerAPI/arquivos_usuarios/Poltrona Fardos_V07.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/backend/FileContentIndex/1924f113-80bd-4883-857a-21ab518916e9.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/backend/FileContentIndex/599b6679-b028-4c15-bd00-b7913931e76c.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/backend/FileContentIndex/c94ab897-8a93-49f8-9c4c-910523e0982a.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/backend/FileContentIndex/e88d4c48-07b9-457f-b5aa-fc4bc100a0ed.vsidx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/backend.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/backend.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/backend.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/backend.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/backend/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/FileContentIndex/2edadc02-d6d5-4d60-b197-c8ef56cc4c66.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/FileContentIndex/4c558c03-574d-467c-b46f-eb1e8d12835d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/FileContentIndex/9accb93d-360f-4821-8006-0267707f4d3b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/FileContentIndex/aa87beeb-148e-431b-8b69-5aede2982741.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/backend/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/backend/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/backend/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/API/Controllers/FileGLBController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/API/Controllers/FileGLBController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/API/Controllers/UsuariosController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/API/Controllers/UsuariosController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Application/Configurations/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Configurations/AutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Application/DTOs/Usuario/UsuarioDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/DTOs/Usuario/UsuarioDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Application/DependecyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/DependecyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Domain/Models/ModeloGLB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Domain/Models/FileGLB.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Domain/Models/Usuario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Domain/Models/Usuario.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/GLBViewerAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/GLBViewerAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Infra/Contexts/BaseApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Infra/Contexts/BaseApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Infra/DependecyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Infra/DependecyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Infra/Repositories/UsuarioRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Infra/Repositories/UsuarioRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Application/Contracts/IFileGLBService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Contracts/IFileGLBService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Domain/Contracts/Repositories/IFileGLBRespository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Domain/Contracts/Repositories/IFileGLBRespository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Infra/Repositories/FilesGLBRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Infra/Repositories/FilesGLBRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/bin/Debug/net6.0/GLBViewerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/bin/Debug/net6.0/GLBViewerAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/bin/Debug/net6.0/GLBViewerAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/bin/Debug/net6.0/GLBViewerAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/GLBViewerAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/ref/GLBViewerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/ref/GLBViewerAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/refint/GLBViewerAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/Debug/net6.0/refint/GLBViewerAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GLBViewerAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GLBViewerAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +53,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1da7b6c7c71a954fe3eb2531c6476711b3e6d93a8d76795386d326bb9dbc/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VqtP6EnUDlYFrxBQ2eOzPmDgWo" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -86,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "XThreadsFramesViewSplitterKey": "0.4470405",
-    "git-widget-placeholder": "feature/integracao-back-end",
+    "git-widget-placeholder": "feature/integracao-model-viewer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -144,6 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695575411656</updated>
       <workItem from="1695575414313" duration="22377000" />
+      <workItem from="1695599011182" duration="9176000" />
     </task>
     <task id="LOCAL-00001" summary=":recycle: refactor: Refatoração e organização da API">
       <option name="closed" value="true" />
@@ -235,58 +223,6 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\Application\Services\FileServiceGlb.cs" initialLine="27" containingFunctionPresentation="Method 'Adicionar'">
-            <startOffsets>
-              <option value="1016" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1017" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs</url>
-          <line>62</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\Application\Services\FileServiceGlb.cs" initialLine="62" containingFunctionPresentation="Method 'ObterPorId'">
-            <startOffsets>
-              <option value="2141" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2142" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs</url>
-          <line>91</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\Application\Services\FileServiceGlb.cs" initialLine="91" containingFunctionPresentation="Method 'ObterIdUsuario'">
-            <startOffsets>
-              <option value="2835" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2836" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs</url>
-          <line>73</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\Application\Services\FileServiceGlb.cs" initialLine="73" containingFunctionPresentation="Method 'Remover'">
-            <startOffsets>
-              <option value="2406" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2407" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/GLBViewerAPI/API/Controllers/FileGLBController.cs</url>
           <line>24</line>
           <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\API\Controllers\FileGLBController.cs" initialLine="24" containingFunctionPresentation="Method 'Adicionar'">
@@ -301,55 +237,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/GLBViewerAPI/API/Controllers/FileGLBController.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\API\Controllers\FileGLBController.cs" initialLine="33" containingFunctionPresentation="Method 'ObterPorId'">
-            <startOffsets>
-              <option value="1311" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1312" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/API/Controllers/FileGLBController.cs</url>
-          <line>42</line>
+          <line>51</line>
           <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\API\Controllers\FileGLBController.cs" initialLine="42" containingFunctionPresentation="Method 'Remover'">
             <startOffsets>
-              <option value="1678" />
+              <option value="2072" />
             </startOffsets>
             <endOffsets>
-              <option value="1679" />
+              <option value="2073" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/Application/Services/FileGlbService.cs</url>
-          <line>46</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\Application\Services\FileGlbService.cs" initialLine="42" containingFunctionPresentation="Method 'Adicionar'">
+          <url>file://$PROJECT_DIR$/GLBViewerAPI/API/Controllers/UsuariosController.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\API\Controllers\UsuariosController.cs" initialLine="25" containingFunctionPresentation="Method 'Adicionar'">
             <startOffsets>
-              <option value="1516" />
+              <option value="942" />
             </startOffsets>
             <endOffsets>
-              <option value="1532" />
+              <option value="943" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/GLBViewerAPI/API/Controllers/UsuariosController.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\API\Controllers\UsuariosController.cs" initialLine="34" containingFunctionPresentation="Method 'ObterPorId'">
+          <url>file://$PROJECT_DIR$/GLBViewerAPI/API/Controllers/UsuariosAuthController.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\finkl\Área de Trabalho\Nova pasta\backend\GLBViewerAPI\API\Controllers\UsuariosAuthController.cs" initialLine="26" containingFunctionPresentation="Method 'Login'">
             <startOffsets>
-              <option value="1321" />
+              <option value="949" />
             </startOffsets>
             <endOffsets>
-              <option value="1322" />
+              <option value="950" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
