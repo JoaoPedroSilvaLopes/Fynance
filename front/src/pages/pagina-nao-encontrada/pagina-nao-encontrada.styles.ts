@@ -1,5 +1,3 @@
-import { WaveIcon as WaveComponent } from '../../assets'
-import { mediaQuery } from '../../core'
 import styled from 'styled-components'
 
 export const Container = styled.header`
@@ -34,19 +32,4 @@ export const Description = styled.p`
   font-size: 1.1rem;
   color: ${props => props.theme.colors.secondaryLight};
   margin-bottom: 3rem;
-`
-
-export const WaveIcon = styled(WaveComponent)`
-  display: none;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 30vh;
-  width: 100%;
-
-  fill: ${props => props.theme.colors.primary};
-
-  ${mediaQuery.greaterThan('mobile')`
-    display: block;
-  `}
 `

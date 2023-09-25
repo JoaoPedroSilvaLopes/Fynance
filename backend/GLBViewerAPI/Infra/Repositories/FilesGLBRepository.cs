@@ -27,4 +27,11 @@ public class FilesGLBRepository : Repository<FileGLB>, IFileGLBRespository
             .Include(f => f.Usuario)
             .FirstOrDefaultAsync(f => f.Id == id);
     }
+    
+    public async Task<List<FileGLB>> ObterTodos(int usuarioId)
+    {
+        return await Context.FilesGlb
+            .Include(f => f.Usuario)
+            .Where(f => f.UsuarioId == usuarioId).ToListAsync();
+    }
 }

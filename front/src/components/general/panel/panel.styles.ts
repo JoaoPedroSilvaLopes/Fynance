@@ -10,10 +10,8 @@ export const Container = styled.div`
     background-color: ${theme.colors.backgroundContent};
 
     border: 0;
-    margin-bottom: 1.25rem;
+    //margin-bottom: 1.25rem;
     border-radius: 0;
-
-    border:1px solid red;
   `}
 `;
 

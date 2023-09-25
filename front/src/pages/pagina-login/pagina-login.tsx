@@ -12,11 +12,15 @@ const PaginaLogin: React.FC = () => {
   return (
     <S.Container>
       <S.AuthContainer>
-        {errors.length > 0 && (
-          <MessageList variant="danger" items={errors} onClose={clearErrors} />
-        )}
-        <S.Title>FAZER LOGIN</S.Title>
         <S.Children>
+          <S.Title>FAZER LOGIN</S.Title>
+          {errors.length > 0 && (
+            <MessageList
+              variant="danger"
+              items={errors}
+              onClose={clearErrors}
+            />
+          )}
           <FormProvider {...form}>
             <LoginForm
               onSubmit={onSubmit}

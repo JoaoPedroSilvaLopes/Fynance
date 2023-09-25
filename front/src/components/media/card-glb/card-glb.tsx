@@ -1,20 +1,26 @@
-import { Panel, Section } from '../../general';
+import { ReactNode } from 'react';
+
 import * as S from './card-glb.styles';
 
 type Props = {
-  url: string
-}
+  nome: string;
+  url: string;
+  actions?: ReactNode[];
+};
 
-const CardGLB: React.FC<Props> = ({ url }) => {
+const CardGLB: React.FC<Props> = ({ nome, url, actions }) => {
   return (
-    <Panel title='Teste'>
-      <model-viewer
-        src={url}
-        ar
-        camera-controls
-        touch-action="pan-y"
-      />
-    </Panel>
+    <S.Card>
+      <S.Header>
+        {nome}
+        {actions && <S.Actions>
+          {actions.map((value, index) => {
+            return <span key={index}>{value}</span>;
+          })}
+        </S.Actions>}
+      </S.Header>
+      <model-viewer src={url} shadow-intensity="2" />
+    </S.Card>
   );
 };
 

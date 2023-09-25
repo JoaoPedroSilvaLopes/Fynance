@@ -12,17 +12,18 @@ type Input = {
 
 export const loginUsuario = async ({ data }: Input): Promise<string> => {
   const response = await HttpClient.of(setupApiConfig()).request({
-    url: '/auth/login',
+    url: '/auth/UsuariosAuth',
     method: 'POST',
     body: {
       email: data.email,
-      password: data.senha,
+      senha: data.senha,
     },
   });
 
+
   switch (response.statusCode) {
     case HttpStatusCode.Ok:
-      return response.body.accessToken as string;
+      return response.body.token as string;
     default:
       throw new UnexpectedError();
   }

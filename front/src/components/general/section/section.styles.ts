@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    border-bottom: 2px solid ${rgba(theme.colors.secondaryLight, 0.25)};
+    border-bottom: 2px solid ${rgba(theme.colors.textPrimary, 0.25)};
     margin-bottom: 1rem;
 
     div {

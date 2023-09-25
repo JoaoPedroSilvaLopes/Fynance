@@ -21,11 +21,11 @@ const PaginaNaoEncontrada: React.FC = () => {
       </S.Description>
       <Button
         leftIcon={ArrowIcon}
+        size='lg'
         onClick={() => navigate('/')}
       >
         Voltar
       </Button>
-      <S.WaveIcon />
     </S.Container>
   )
 }

@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }) => {
   return (
-    <S.ButtonWrapper isFull={isFull} isLoading={isLoading} variant={variant}>
+    <S.ButtonWrapper isFull={isFull} variant={variant}>
       <BsButton {...rest}>
         {isLoading ? (
           <Spinner variant="light" size="sm" animation="border" />

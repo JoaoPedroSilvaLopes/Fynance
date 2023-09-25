@@ -13,7 +13,13 @@ const Section: React.FC<SectionProps> = ({
     <>
       <S.Container {...rest}>
         <S.Title className={isRequired ? 'required' : ''}>{title}</S.Title>
-        {actions && <S.Actions>{actions.map((action) => action)}</S.Actions>}
+        {actions && (
+          <S.Actions>
+            {actions.map((action, index) => (
+              <span key={index}>{action}</span>
+            ))}
+          </S.Actions>
+        )}
       </S.Container>
 
       {children}
