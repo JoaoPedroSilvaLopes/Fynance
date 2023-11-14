@@ -1,9 +1,9 @@
-## :pencil2: GLB-Viewer
+## :pencil2: Fynance
 
 ## :file_folder: Sobre o projeto
 
 <p align="justify">
-  Esse projeto se trata de uma aplicação web de gestão e visualização de modelos GLB em que o usuário consiga se cadastrar e se autenticar para poder visualizar, cadastrar e excluir seus modelos com o auxílio da biblioteca Model Viewer.
+  Esse projeto se trata de uma aplicação web de gestão de controle de caixa e estoque, em que o usuário consiga se visualizar os relatórios de pagamentos, reembolsos e gastos.
 </p>
 
 ## 🖼️ Front-End
@@ -15,7 +15,7 @@
   A organização de pastas do projeto no Front-End é feita dividindo as responsabilidades em módulos para organizar o projeto como um todo e facilitar o desenvolvimento. Os modulos são:
 </p>
 
-  - **assets**: Módulo referente à SVGs e arquivos com a extensão .glb;
+  - **assets**: Módulo referente à SVGs e arquivos com a extensão .png ou .jpg;
   - **components**: Módulo que comporta todos os componentes feitos no projeto utilizando o Boostrap;
   - **core**: Módulo que possui arquivos e utilitarios essenciais para o funcionamento da aplicação;
   - **domain-types**: Módulo referente a todos os tipos criados com o auxilio do Typescript;
@@ -47,7 +47,7 @@
 
 * Clonando o respositório
   ```sh
-  git clone https://github.com/JoaoPedroSilvaLopes/GLB-Viewer.git
+  git clone https://github.com/JoaoPedroSilvaLopes/Fynance.git
   ```
 
 * Installando as dependencias do projeto com yarn
@@ -66,7 +66,6 @@
 - <a href="https://www.typescriptlang.org">TypeScript</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
 - <a href="https://react.dev">React</a>
-- <a href="https://modelviewer.dev">Model Viewer</a>
 - <a href="https://tanstack.com/query/v3/">React Query</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
@@ -74,13 +73,13 @@
 - <a href="https://styled-components.com">Styled Components</a>
 
 ## :framed_picture: Design das telas
-- <a href="https://www.figma.com/file/uStAGItdkxaMtKHSh9ToWN/GLB-Viewer?type=design&mode=design&t=yT2c8hd7fQryJPIa-0">Figma</a>
+- <a href="https://www.figma.com/file/ttbnwo7SsyCUHnsmbk9MDy/Fynance?type=design&node-id=0-1&mode=design&t=S0k5aspfu1CVOeUE-0">Figma</a>
 
 ## ⌨️ Back-End
 
 <p align="justify">
-  Foi utilizado o framework .NET 6 e Entity Framework 6 com o template de Minimal API e conexão com o banco de dados MySQL, mas com a organização de pasta 
-  seguindo a modelagem de DDD (Domain Driven Desing) para facilitar a implementação de regras de negócios e outros processos complexos, porém sem arquitetura lógica definida.
+  Foi utilizado o framework .NET 6 e Entity Framework 6 e conexão com o banco de dados MySQL, utilizando 
+  a modelagem de DDD (Domain Driven Desing) para facilitar a implementação de regras de negócios e outros processos complexos.
 </p>
 <p align="justify">
   Dito isso, o projeto foi estruturado em 4 "camadas" principais e 1 "camada" auxiliar. As camadas são:
@@ -95,8 +94,6 @@
 ## 💡 Rodando o Back-End
 
 ### Pre-requisitos
-
-<p> ⚠️ Por conta de o Back-End não te sido subido em uma VM ⚠️ para o rodar o projeto é necessário instalar:  </p>
 
 - <a href="https://dotnet.microsoft.com/en-us/download/visual-studio-sdks">.NET SDK</a>
 - <a href="https://dev.mysql.com/downloads/installer/">MySQL 8.0.34</a> (Banco de dados)
